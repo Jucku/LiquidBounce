@@ -58,7 +58,7 @@ val ipcConfiguration by AsyncLazy {
 }
 
 object ModuleRichPresence : ClientModule("RichPresence", Category.CLIENT, state = true, hide = true,
-    aliases = arrayOf("DiscordPresence")) {
+    aliases = arrayOf("DiscordPresence", "RPC")) {
 
     private val detailsText by text("Details", "Nextgen v%clientVersion% by %clientAuthor%")
     private val stateText by text("State", "%enabledModules% of %totalModules% modules enabled")
